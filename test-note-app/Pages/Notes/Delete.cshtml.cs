@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using test_note_app.Data;
 using test_note_app.Models;
 
-namespace test_note_app.Pages.Notes
+namespace test_note_app.Models
 {
     public class DeleteModel : PageModel
     {
