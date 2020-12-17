@@ -27,7 +27,7 @@ namespace test_note_app
         {
             services.AddRazorPages();
 
-            services.AddDbContext<RazorPagesNotesContext>(options =>
+            services.AddDbContext<test_note_appContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("RazorPagesNotesContext")));
 
             services.AddDbContext<test_note_appContext>(options =>
