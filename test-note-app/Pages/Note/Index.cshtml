@@ -1,5 +1,5 @@
 ﻿@page
-@model test_note_app.Pages.Notes.IndexModel
+@model test_note_app.Pages.Note.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -17,7 +17,10 @@
                 @Html.DisplayNameFor(model => model.Notes[0].Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Notes[0].message)
+                @Html.DisplayNameFor(model => model.Notes[0].CreateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notes[0].text)
             </th>
             <th></th>
         </tr>
@@ -29,7 +32,10 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.message)
+                @Html.DisplayFor(modelItem => item.CreateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.text)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

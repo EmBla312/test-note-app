@@ -29,6 +29,9 @@ namespace test_note_app
 
             services.AddDbContext<RazorPagesNotesContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("RazorPagesNotesContext")));
+
+            services.AddDbContext<test_note_appContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("test_note_appContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

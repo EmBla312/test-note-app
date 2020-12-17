@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using test_note_app.Data;
 using test_note_app.Models;
 
-namespace test_note_app.Models
+namespace test_note_app.Pages.Note
 {
     public class DeleteModel : PageModel
     {
-        private readonly test_note_app.Data.RazorPagesNotesContext _context;
+        private readonly test_note_app.Data.test_note_appContext _context;
 
-        public DeleteModel(test_note_app.Data.RazorPagesNotesContext context)
+        public DeleteModel(test_note_app.Data.test_note_appContext context)
         {
             _context = context;
         }
